@@ -22,8 +22,8 @@ class UserTransaction {
 
 router.get('/all', function (req, res, next) {
     let utArr = [];
-    for (let i = 0; i < 5; i++) {
-        let ut = new UserTransaction("First Trans - from WB", Math.floor(Math.random() * 25) - 5  , new Date(), 'Online Services', "Main Account", "N3DA_NDKK", "Nordea");
+    for (let i = 0; i < 25; i++) {
+        let ut = new UserTransaction("WB TRANS", Math.floor(Math.random() * 25) - 5  , new Date(), 'Online Services', "Main Account", "N3DA_NDKK", "Nordea");
         utArr.push(ut);
     }
    res.send(utArr);
