@@ -23,7 +23,11 @@ class UserTransaction {
 router.get('/all', function (req, res, next) {
     let utArr = [];
     for (let i = 0; i < 25; i++) {
-        let ut = new UserTransaction("WB TRANS", Math.floor(Math.random() * 25) - 5  , new Date(), 'Online Services', "Main Account", "N3DA_NDKK", "Nordea");
+        if(i < 10) {
+            let ut = new UserTransaction("WB TRANS", Math.floor(Math.random() * 25) - 5, new Date(), 'Online Services', "Main Account", "N3DA_NDKK", "Nordea");
+        } else {
+            let ut = new UserTransaction("WB TRANS", Math.floor(Math.random() * 25) - 5, new Date(), 'Fun', "Main Account", "N3DA_NDKK", "Nordea");
+        }
         utArr.push(ut);
     }
    res.send(utArr);
