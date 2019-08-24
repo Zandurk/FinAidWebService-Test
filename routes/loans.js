@@ -26,6 +26,9 @@ router.get('/all', function (req, res, next) {
         if(i < 10) {
             let ut = new UserTransaction("WB TRANS", Math.floor(Math.random() * 25) - 5, new Date(), 'Online Services', "Main Account", "N3DA_NDKK", "Nordea");
             utArr.push(ut);
+        } else if (i > 10 && i < 20) {
+            let ut = new UserTransaction("WB TRANS", Math.floor(Math.random() * 25) - 5, new Date(), 'Mad', "Main Account", "N3DA_NDKK", "Nordea");
+            utArr.push(ut);
         } else {
             let ut = new UserTransaction("WB TRANS", Math.floor(Math.random() * 25) - 5, new Date(), 'Fun', "Main Account", "N3DA_NDKK", "Nordea");
             utArr.push(ut);
