@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e0f72955-aeaa-4e9c-9ea6-e82edaf33185" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/loans.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/loans.js" afterDir="false" />
-    </list>
+    <list default="true" id="e0f72955-aeaa-4e9c-9ea6-e82edaf33185" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +53,7 @@
       <option name="presentableId" value="Default" />
       <updated>1566647564840</updated>
       <workItem from="1566647572321" duration="3398000" />
-      <workItem from="1570098324946" duration="1626000" />
+      <workItem from="1570098324946" duration="1894000" />
     </task>
     <servers />
   </component>
