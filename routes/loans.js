@@ -20,6 +20,27 @@ class UserTransaction {
 
 }
 
+class Account {
+
+    constructor(_id, account_name, account_numbers, account_type, available_balance, bank, booked_balance, country, credit_limit, currency, latest_transaction_booking_date, product, status, value_dated_balance) {
+        this.id = _id;
+        this._account_name = account_name;
+        this._account_numbers = account_numbers;
+        this._account_type = account_type;
+        this._available_balance = available_balance;
+        this._bank = bank;
+        this._booked_balance = booked_balance;
+        this._country = country;
+        this._credit_limit = credit_limit;
+        this._currency = currency;
+        this._latest_transaction_booking_date = latest_transaction_booking_date;
+        this._product = product;
+        this._status = status;
+        this._value_dated_balance = value_dated_balance;
+    }
+
+}
+
 router.get('/all', function (req, res, next) {
     let utArr = [];
     for (let i = 0; i < 25; i++) {
@@ -36,6 +57,11 @@ router.get('/all', function (req, res, next) {
 
     }
    res.send(utArr);
+});
+
+router.get('/account', (req, res, next) => {
+   let acc = new Account(1, 'Test Account', {_type : 'IBAN', value : '123456789'}, 'Current', 2000, {'bic': 'NDEADKKK', 'country': 'DK', 'name': 'Nordea'}, 500, 'DK', 0, 'DKK', new Date(), 'Test', 'Open', 1500);
+   res.send(acc);
 });
 
 module.exports = router;
